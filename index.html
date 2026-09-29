@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ - Software & Technology Professional Portfolio</title>
+    <title>Antony | Software & Technology Professional</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -44,7 +44,7 @@
     </script>
 
     <style>
-        /* Custom Styles & Glassmorphism Effects */
+        /* Custom Styling & Glassmorphism */
         .glass-card {
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
@@ -58,11 +58,6 @@
             border: 1px solid rgba(0, 0, 0, 0.08);
         }
         
-        /* Gradient Animated Glow */
-        .glow-bg {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
-        }
-
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -83,11 +78,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #6366f1;
         }
-
-        /* Code block badge styling */
-        .code-badge {
-            font-family: 'JetBrains Mono', monospace;
-        }
     </style>
 </head>
 
@@ -98,11 +88,11 @@
             <!-- Brand / Logo -->
             <a href="#hero" class="flex items-center space-x-2 text-xl font-bold tracking-tight text-white light:text-slate-900 group">
                 <span class="text-brand-500 font-mono">&lt;</span>
-                <span>XYZ</span>
+                <span>Antony.dev</span>
                 <span class="text-brand-500 font-mono">/&gt;</span>
             </a>
 
-            <!-- Desktop Navigation -->
+            <!-- Desktop Navigation Links -->
             <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300 light:text-slate-600">
                 <a href="#about" class="hover:text-brand-400 light:hover:text-brand-600 transition-colors">About</a>
                 <a href="#experience" class="hover:text-brand-400 light:hover:text-brand-600 transition-colors">Experience</a>
@@ -112,9 +102,9 @@
                 <a href="#community" class="hover:text-brand-400 light:hover:text-brand-600 transition-colors">Community</a>
             </nav>
 
-            <!-- Actions (Theme Toggle & Contact CTA) -->
+            <!-- Actions (Theme Toggle & Contact Button) -->
             <div class="flex items-center space-x-3">
-                <button id="themeToggle" class="p-2 rounded-lg bg-slate-800 light:bg-slate-200 text-slate-300 light:text-slate-700 hover:text-brand-400 transition-colors focus:outline-none" title="Toggle Theme">
+                <button id="themeToggle" class="p-2 rounded-lg bg-slate-800 light:bg-slate-200 text-slate-300 light:text-slate-700 hover:text-brand-400 transition-colors focus:outline-none" title="Toggle Dark/Light Mode">
                     <i class="fa-solid fa-moon dark:block hidden text-lg"></i>
                     <i class="fa-solid fa-sun dark:hidden block text-lg text-amber-500"></i>
                 </button>
@@ -123,7 +113,7 @@
                     Get in Touch
                 </a>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile Navigation Button -->
                 <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-300 light:text-slate-700 hover:bg-slate-800 light:hover:bg-slate-200 focus:outline-none">
                     <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
                 </button>
@@ -144,7 +134,6 @@
 
     <main class="pt-20">
         <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-16">
-            <!-- Animated Ambient Background Glow -->
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-500/20 rounded-full blur-[120px] pointer-events-none"></div>
             <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-purple-500/15 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -155,11 +144,11 @@
                 </div>
 
                 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white light:text-slate-900 tracking-tight leading-tight mb-4">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-indigo-300 to-purple-400">XYZ</span>
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-indigo-300 to-purple-400">Antony</span>
                 </h1>
 
-                <p class="text-xl sm:text-2xl font-medium text-slate-300 light:text-slate-600 mb-4 max-w-2xl mx-auto">
-                    B.Voc Graduate | Software & Technology Professional
+                <p class="text-xl sm:text-2xl font-medium text-slate-300 light:text-slate-600 mb-4 max-w-3xl mx-auto">
+                    B.Voc Graduate in Software Development from <strong>Antony University / College</strong>
                 </p>
 
                 <div class="flex items-center justify-center text-slate-400 light:text-slate-500 text-sm mb-8 space-x-2">
@@ -167,27 +156,25 @@
                     <span>Kochi, Kerala, India</span>
                 </div>
 
-                <!-- CTA Action Buttons -->
                 <div class="flex flex-wrap justify-center items-center gap-4">
                     <a href="#contact" class="px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-all duration-200 shadow-lg shadow-brand-500/25 flex items-center space-x-2">
                         <i class="fa-regular fa-paper-plane"></i>
                         <span>Contact Me</span>
                     </a>
-                    <a href="https://github.com/xyz-candidate" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-800 light:bg-slate-200 light:text-slate-800 light:hover:bg-slate-300 hover:bg-slate-700 text-white font-semibold transition-all duration-200 flex items-center space-x-2 border border-slate-700 light:border-slate-300">
+                    <a href="https://github.com/antony-candidate" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-800 light:bg-slate-200 light:text-slate-800 hover:bg-slate-700 text-white font-semibold transition-all duration-200 flex items-center space-x-2 border border-slate-700 light:border-slate-300">
                         <i class="fa-brands fa-github text-lg"></i>
                         <span>GitHub Profile</span>
                     </a>
-                    <a href="https://linkedin.com/in/xyz-candidate" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-800 light:bg-slate-200 light:text-slate-800 light:hover:bg-slate-300 hover:bg-slate-700 text-white font-semibold transition-all duration-200 flex items-center space-x-2 border border-slate-700 light:border-slate-300">
+                    <a href="https://linkedin.com/in/antony-candidate" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-800 light:bg-slate-200 light:text-slate-800 hover:bg-slate-700 text-white font-semibold transition-all duration-200 flex items-center space-x-2 border border-slate-700 light:border-slate-300">
                         <i class="fa-brands fa-linkedin text-lg text-sky-400"></i>
                         <span>LinkedIn</span>
                     </a>
                 </div>
 
-                <!-- Quick Contact Info Bar -->
                 <div class="mt-12 pt-8 border-t border-slate-800/80 light:border-slate-200 flex flex-wrap justify-center items-center gap-6 text-sm text-slate-400 light:text-slate-600">
-                    <a href="mailto:xyz.candidate@email.com" class="hover:text-brand-400 transition-colors flex items-center gap-2">
+                    <a href="mailto:antony.candidate@email.com" class="hover:text-brand-400 transition-colors flex items-center gap-2">
                         <i class="fa-regular fa-envelope text-brand-400"></i>
-                        xyz.candidate@email.com
+                        antony.candidate@email.com
                     </a>
                     <a href="tel:+919876543210" class="hover:text-brand-400 transition-colors flex items-center gap-2">
                         <i class="fa-solid fa-phone text-brand-400"></i>
@@ -204,15 +191,14 @@
                     <h3 class="text-3xl font-extrabold text-white light:text-slate-900">Professional Summary</h3>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6 sm:p-8 light:shadow-sm">
+                <div class="glass-card rounded-2xl p-6 sm:p-8">
                     <p class="text-slate-300 light:text-slate-700 text-lg leading-relaxed mb-6">
-                        Motivated and detail-oriented B.Voc graduate with 2–3 years of professional experience in software development and technology-related roles. Skilled in developing scalable applications, troubleshooting technical issues, and working collaboratively in agile development environments.
+                        Motivated and detail-oriented B.Voc graduate with 2–3 years of professional experience in software development and technology-related roles. Skilled in developing scalable applications, troubleshooting technical issues, and working collaboratively in team-oriented agile projects.
                     </p>
                     <p class="text-slate-300 light:text-slate-700 text-lg leading-relaxed">
-                        An active participant in professional technology organizations and local developer communities, with a strong commitment to continuous learning and staying updated with emerging web technologies.
+                        An active participant in professional technology organizations and local developer communities, with a strong commitment to continuous learning and staying updated with modern software technologies.
                     </p>
 
-                    <!-- Key Metrics Highlights -->
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 pt-8 border-t border-slate-700/50 light:border-slate-200">
                         <div class="text-center sm:text-left">
                             <span class="block text-3xl font-bold text-brand-400 font-mono">2-3 Yrs</span>
@@ -224,7 +210,7 @@
                         </div>
                         <div class="text-center sm:text-left">
                             <span class="block text-3xl font-bold text-emerald-400 font-mono">2+</span>
-                            <span class="text-xs text-slate-400 light:text-slate-500 uppercase tracking-wider">Active Tech Memberships</span>
+                            <span class="text-xs text-slate-400 light:text-slate-500 uppercase tracking-wider">Active Memberships</span>
                         </div>
                     </div>
                 </div>
@@ -238,12 +224,10 @@
                     <h3 class="text-3xl sm:text-4xl font-extrabold text-white light:text-slate-900">Work Experience</h3>
                 </div>
 
-                <!-- Timeline Container -->
                 <div class="relative border-l-2 border-slate-800 light:border-slate-300 ml-4 sm:ml-8 space-y-12">
                     
                     <!-- Role 1 -->
                     <div class="relative pl-6 sm:pl-10 group">
-                        <!-- Timeline Icon Dot -->
                         <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-brand-600 border-4 border-darkbg light:border-slate-50 flex items-center justify-center text-white text-xs group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
@@ -260,19 +244,18 @@
                             </div>
 
                             <ul class="space-y-2.5 text-slate-300 light:text-slate-600 text-sm sm:text-base list-disc list-inside marker:text-brand-500">
-                                <li>Developed and maintained web-based applications according to client and internal project requirements.</li>
-                                <li>Worked with senior developers to design, test, and deploy software features seamlessly.</li>
-                                <li>Identified and resolved application bugs and technical issues during development cycles.</li>
-                                <li>Participated in code reviews and strictly followed established dev practices and guidelines.</li>
-                                <li>Collaborated with team members using Git for version control and workflow management.</li>
-                                <li>Prepared basic technical documentation and structured project reports.</li>
+                                <li>Developed and maintained web-based applications according to project requirements.</li>
+                                <li>Worked with senior developers to design, test, and deploy software features.</li>
+                                <li>Identified and resolved application bugs and technical issues.</li>
+                                <li>Participated in code reviews and followed established development practices.</li>
+                                <li>Collaborated with team members using Git for version control.</li>
+                                <li>Prepared basic technical documentation and project reports.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Role 2 -->
                     <div class="relative pl-6 sm:pl-10 group">
-                        <!-- Timeline Icon Dot -->
                         <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-700 light:bg-slate-400 border-4 border-darkbg light:border-slate-50 flex items-center justify-center text-white text-xs group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-code"></i>
                         </div>
@@ -289,11 +272,11 @@
                             </div>
 
                             <ul class="space-y-2.5 text-slate-300 light:text-slate-600 text-sm sm:text-base list-disc list-inside marker:text-brand-500">
-                                <li>Assisted in developing and testing interactive web software applications.</li>
-                                <li>Created reusable frontend components and implemented features under direct supervision.</li>
-                                <li>Performed debugging and systematic troubleshooting of existing applications.</li>
-                                <li>Assisted with database operations, schema updates, and data validation routines.</li>
-                                <li>Participated in team meetings, technical project discussions, and agile sprint activities.</li>
+                                <li>Assisted in developing and testing software applications.</li>
+                                <li>Created reusable components and implemented application features under supervision.</li>
+                                <li>Performed debugging and troubleshooting of existing applications.</li>
+                                <li>Assisted with database operations and data validation.</li>
+                                <li>Participated in team meetings, project discussions, and sprint activities.</li>
                             </ul>
                         </div>
                     </div>
@@ -349,7 +332,7 @@
                     <div class="glass-card p-6 sm:p-8 rounded-2xl">
                         <div class="flex items-center space-x-3 mb-6">
                             <i class="fa-solid fa-lightbulb text-purple-400 text-2xl"></i>
-                            <h4 class="text-xl font-bold text-white light:text-slate-900">Soft Skills & Competencies</h4>
+                            <h4 class="text-xl font-bold text-white light:text-slate-900">Soft Skills</h4>
                         </div>
 
                         <div class="flex flex-wrap gap-3">
@@ -376,21 +359,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Languages -->
-                <div class="mt-8 glass-card p-6 rounded-2xl flex flex-wrap items-center justify-between gap-4">
-                    <div class="flex items-center space-x-3">
-                        <i class="fa-solid fa-language text-brand-400 text-xl"></i>
-                        <span class="font-bold text-white light:text-slate-900">Languages:</span>
-                    </div>
-                    <div class="flex flex-wrap gap-4 text-sm text-slate-300 light:text-slate-600">
-                        <span><strong class="text-white light:text-slate-800">English:</strong> Professional Working</span>
-                        <span>•</span>
-                        <span><strong class="text-white light:text-slate-800">Malayalam:</strong> Native</span>
-                        <span>•</span>
-                        <span><strong class="text-white light:text-slate-800">Hindi:</strong> Conversational</span>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -398,35 +366,26 @@
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-10">
                     <h2 class="text-xs uppercase font-mono tracking-widest text-brand-400 font-bold mb-2">Portfolio Showcase</h2>
-                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white light:text-slate-900">Featured Projects</h3>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white light:text-slate-900">Projects</h3>
                 </div>
 
-                <!-- Project Filter Buttons -->
-                <div class="flex justify-center mb-10 gap-2">
-                    <button class="project-filter active px-4 py-1.5 rounded-lg text-sm font-medium transition-all bg-brand-600 text-white" data-filter="all">All Projects</button>
-                    <button class="project-filter px-4 py-1.5 rounded-lg text-sm font-medium transition-all bg-slate-800 light:bg-slate-200 text-slate-300 light:text-slate-700 hover:bg-slate-700" data-filter="python">Python / SQL</button>
-                    <button class="project-filter px-4 py-1.5 rounded-lg text-sm font-medium transition-all bg-slate-800 light:bg-slate-200 text-slate-300 light:text-slate-700 hover:bg-slate-700" data-filter="web">Web Tech</button>
-                </div>
-
-                <!-- Project Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
                     <!-- Project Card 1 -->
-                    <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 light:border-slate-200 hover:border-brand-500/50 transition-all duration-300 flex flex-col" data-category="python">
+                    <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 light:border-slate-200 hover:border-brand-500/50 transition-all duration-300 flex flex-col">
                         <div class="p-4 bg-slate-900/80 light:bg-slate-100 border-b border-slate-800 light:border-slate-200 flex items-center justify-between">
                             <div class="flex items-center space-x-2">
                                 <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
                                 <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
                                 <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
                             </div>
-                            <span class="text-xs font-mono text-slate-400">student_manager.py</span>
+                            <span class="text-xs font-mono text-slate-400">student_management.py</span>
                         </div>
 
                         <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
                             <div>
                                 <h4 class="text-2xl font-bold text-white light:text-slate-900 mb-3">Student Management System</h4>
                                 <p class="text-slate-300 light:text-slate-600 text-sm leading-relaxed mb-6">
-                                    Developed a robust desktop application designed for efficiently managing student records, course enrollments, and academic data. Implemented functions for adding, updating, searching, and deleting records with full data validation.
+                                    Developed a basic application for managing student records. Implemented functions for adding, updating, searching, and deleting records while designing a structured database for student information.
                                 </p>
                             </div>
 
@@ -434,19 +393,18 @@
                                 <div class="flex flex-wrap gap-2 mb-6">
                                     <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-500/10 text-amber-400 border border-amber-500/20">Python</span>
                                     <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-500/10 text-sky-400 border border-sky-500/20">SQL</span>
-                                    <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-700/50 text-slate-300">Database Design</span>
                                 </div>
 
                                 <button onclick="openProjectModal('student-mgmt')" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 light:bg-slate-200 light:text-slate-800 hover:bg-brand-600 hover:text-white transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    <span>View Details & Logic</span>
+                                    <span>View Details & Code</span>
                                 </button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project Card 2 -->
-                    <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 light:border-slate-200 hover:border-brand-500/50 transition-all duration-300 flex flex-col" data-category="web">
+                    <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 light:border-slate-200 hover:border-brand-500/50 transition-all duration-300 flex flex-col">
                         <div class="p-4 bg-slate-900/80 light:bg-slate-100 border-b border-slate-800 light:border-slate-200 flex items-center justify-between">
                             <div class="flex items-center space-x-2">
                                 <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
@@ -460,25 +418,24 @@
                             <div>
                                 <h4 class="text-2xl font-bold text-white light:text-slate-900 mb-3">Responsive Portfolio Website</h4>
                                 <p class="text-slate-300 light:text-slate-600 text-sm leading-relaxed mb-6">
-                                    Created a responsive personal web portfolio showcasing modern UI/UX principles. Features dedicated sections for education, skill stacks, dynamic project filtering, and cross-browser responsiveness optimized for desktop and mobile screens.
+                                    Created a responsive personal portfolio website with dedicated sections for education, skills, projects, and professional experience, optimized for mobile and desktop screens.
                                 </p>
                             </div>
 
                             <div>
                                 <div class="flex flex-wrap gap-2 mb-6">
-                                    <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-orange-500/10 text-orange-400 border border-orange-500/20">HTML5</span>
-                                    <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">CSS3</span>
+                                    <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-orange-500/10 text-orange-400 border border-orange-500/20">HTML</span>
+                                    <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">CSS</span>
                                     <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">JavaScript</span>
                                 </div>
 
                                 <button onclick="openProjectModal('portfolio-web')" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 light:bg-slate-200 light:text-slate-800 hover:bg-brand-600 hover:text-white transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    <span>View Details & Logic</span>
+                                    <span>View Details & Code</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -494,7 +451,7 @@
                             <h3 class="text-2xl sm:text-3xl font-extrabold text-white light:text-slate-900">Education</h3>
                         </div>
 
-                        <div class="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden">
+                        <div class="glass-card p-6 sm:p-8 rounded-2xl">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
                                     <h4 class="text-xl font-bold text-white light:text-slate-900">Bachelor of Vocation (B.Voc)</h4>
@@ -506,7 +463,7 @@
                             </div>
 
                             <p class="text-slate-400 light:text-slate-600 text-sm mb-4">
-                                XYZ University / College, Kerala, India
+                                Antony University / College, Kerala
                             </p>
 
                             <h5 class="text-xs font-semibold text-slate-300 light:text-slate-700 uppercase tracking-wider mb-2">Relevant Coursework:</h5>
@@ -535,7 +492,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-white light:text-slate-900">Certificate in Python Programming</h4>
-                                    <p class="text-xs text-slate-400 light:text-slate-500">Core concepts, data structures, and algorithmic scripting.</p>
+                                    <p class="text-xs text-slate-400 light:text-slate-500">Core programming logic & scripting fundamentals.</p>
                                 </div>
                             </div>
 
@@ -545,7 +502,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-white light:text-slate-900">Introduction to Web Development</h4>
-                                    <p class="text-xs text-slate-400 light:text-slate-500">HTML5, CSS3 styling layout standards, and JavaScript basics.</p>
+                                    <p class="text-xs text-slate-400 light:text-slate-500">HTML5, CSS layout principles, and core JavaScript.</p>
                                 </div>
                             </div>
 
@@ -555,7 +512,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-white light:text-slate-900">Git & GitHub Fundamentals</h4>
-                                    <p class="text-xs text-slate-400 light:text-slate-500">Version control, branching strategies, and collaborative code management.</p>
+                                    <p class="text-xs text-slate-400 light:text-slate-500">Branching workflows, version control, and collaborative coding.</p>
                                 </div>
                             </div>
                         </div>
@@ -568,7 +525,7 @@
         <section id="community" class="py-20">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-14">
-                    <h2 class="text-xs uppercase font-mono tracking-widest text-brand-400 font-bold mb-2">Network & Leadership</h2>
+                    <h2 class="text-xs uppercase font-mono tracking-widest text-brand-400 font-bold mb-2">Network & Outreach</h2>
                     <h3 class="text-3xl sm:text-4xl font-extrabold text-white light:text-slate-900">Professional Involvement</h3>
                 </div>
 
@@ -590,9 +547,9 @@
                             </span>
 
                             <ul class="space-y-2 text-slate-300 light:text-slate-600 text-sm list-disc list-inside marker:text-brand-500">
-                                <li>Participated actively in regional professional networking and technology conferences.</li>
-                                <li>Attended tech workshops and seminars focusing on modern software frameworks and emerging trends.</li>
-                                <li>Engaged with senior technology professionals to exchange industry insights and best practices.</li>
+                                <li>Participated in professional networking and technology-related events.</li>
+                                <li>Attended workshops and seminars focused on software development and emerging technologies.</li>
+                                <li>Engaged with fellow technology professionals to exchange knowledge and industry insights.</li>
                             </ul>
                         </div>
                     </div>
@@ -614,9 +571,8 @@
                             </span>
 
                             <ul class="space-y-2 text-slate-300 light:text-slate-600 text-sm list-disc list-inside marker:text-emerald-500">
-                                <li>Assisted in organizing beginner-level programming workshops and technical meetups in Kerala.</li>
-                                <li>Mentored students and first-time coding participants during community learning sessions.</li>
-                                <li>Supported event logistics and setup for local developer tech talks.</li>
+                                <li>Assisted in organizing beginner-level programming workshops and technical meetups.</li>
+                                <li>Supported students and participants during community learning activities.</li>
                             </ul>
                         </div>
                     </div>
@@ -629,7 +585,7 @@
                 <div class="text-center mb-12">
                     <h2 class="text-xs uppercase font-mono tracking-widest text-brand-400 font-bold mb-2">Connect</h2>
                     <h3 class="text-3xl sm:text-4xl font-extrabold text-white light:text-slate-900">Get In Touch</h3>
-                    <p class="text-slate-400 light:text-slate-600 mt-2">Have a question or looking to collaborate? Send me a message below!</p>
+                    <p class="text-slate-400 light:text-slate-600 mt-2">Have an inquiry or project proposal? Send Antony a message below!</p>
                 </div>
 
                 <div class="glass-card p-6 sm:p-10 rounded-2xl">
@@ -647,12 +603,12 @@
 
                         <div>
                             <label for="subject" class="block text-sm font-medium text-slate-300 light:text-slate-700 mb-2">Subject</label>
-                            <input type="text" id="subject" required placeholder="Software Developer Position / Collaboration" class="w-full px-4 py-3 rounded-xl bg-slate-800/80 light:bg-white border border-slate-700 light:border-slate-300 text-white light:text-slate-900 focus:outline-none focus:border-brand-500 transition-colors">
+                            <input type="text" id="subject" required placeholder="Software Developer Role / Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-800/80 light:bg-white border border-slate-700 light:border-slate-300 text-white light:text-slate-900 focus:outline-none focus:border-brand-500 transition-colors">
                         </div>
 
                         <div>
                             <label for="message" class="block text-sm font-medium text-slate-300 light:text-slate-700 mb-2">Message</label>
-                            <textarea id="message" rows="4" required placeholder="Hello XYZ, I noticed your profile and would like to discuss..." class="w-full px-4 py-3 rounded-xl bg-slate-800/80 light:bg-white border border-slate-700 light:border-slate-300 text-white light:text-slate-900 focus:outline-none focus:border-brand-500 transition-colors"></textarea>
+                            <textarea id="message" rows="4" required placeholder="Hi Antony, I would like to connect with you regarding..." class="w-full px-4 py-3 rounded-xl bg-slate-800/80 light:bg-white border border-slate-700 light:border-slate-300 text-white light:text-slate-900 focus:outline-none focus:border-brand-500 transition-colors"></textarea>
                         </div>
 
                         <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-all shadow-lg shadow-brand-500/25 flex items-center justify-center space-x-2">
@@ -667,41 +623,36 @@
 
     <footer class="py-8 bg-darkbg light:bg-slate-200 border-t border-slate-800/80 light:border-slate-300 text-center text-slate-400 text-sm">
         <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>© <span id="currentYear"></span> XYZ. All rights reserved.</p>
+            <p>© 2026 Antony. All rights reserved.</p>
             <div class="flex space-x-4 text-base">
-                <a href="https://github.com/xyz-candidate" target="_blank" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/xyz-candidate" target="_blank" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:xyz.candidate@email.com" class="hover:text-brand-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/antony-candidate" target="_blank" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/antony-candidate" target="_blank" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:antony.candidate@email.com" class="hover:text-brand-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- Interactive Project Modal Structure -->
     <div id="projectModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4">
         <div class="glass-card max-w-2xl w-full rounded-2xl p-6 sm:p-8 relative border border-slate-700 light:border-slate-300 max-h-[90vh] overflow-y-auto">
             <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <div id="modalContent">
-                <!-- Dynamically populated via JS -->
-            </div>
+            <div id="modalContent"></div>
         </div>
     </div>
 
-    <!-- Toast Notification Message Container -->
+    <!-- Toast Notification Overlay -->
     <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 glass-card px-6 py-4 rounded-xl shadow-xl flex items-center space-x-3 border-l-4 border-brand-500">
         <i class="fa-solid fa-circle-check text-brand-400 text-xl"></i>
         <span id="toastMessage" class="text-sm font-medium text-white light:text-slate-900">Message sent successfully!</span>
     </div>
 
     <script>
-        // Set Current Year
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Dark / Light Theme Switching Logic
+        // Dark / Light Theme Toggle Functionality
         const themeToggleBtn = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
 
-        // Check local storage or system preference
         if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
             htmlElement.classList.add('light');
         } else {
@@ -718,7 +669,7 @@
             }
         });
 
-        // Mobile Navigation Toggle
+        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const menuIcon = document.getElementById('menuIcon');
@@ -732,7 +683,6 @@
             }
         });
 
-        // Close mobile menu when clicking menu items
         document.querySelectorAll('#mobileMenu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
@@ -740,57 +690,29 @@
             });
         });
 
-        // Project Filtering Functionality
-        const filterBtns = document.querySelectorAll('.project-filter');
-        const projectCards = document.querySelectorAll('.project-card');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => {
-                    b.classList.remove('bg-brand-600', 'text-white', 'active');
-                    b.classList.add('bg-slate-800', 'light:bg-slate-200', 'text-slate-300', 'light:text-slate-700');
-                });
-
-                btn.classList.add('bg-brand-600', 'text-white', 'active');
-                btn.classList.remove('bg-slate-800', 'light:bg-slate-200', 'text-slate-300', 'light:text-slate-700');
-
-                const filter = btn.getAttribute('data-filter');
-
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Interactive Project Detail Modal Data
+        // Interactive Project Details Logic
         const projectDetails = {
             'student-mgmt': {
                 title: 'Student Management System',
-                tech: ['Python', 'SQL', 'Database Design', 'CRUD Operations'],
-                description: 'A comprehensive software application built to streamline academic record-keeping. Designed with modular architecture to ensure clear separation of concern between data handling and UI routines.',
+                tech: ['Python', 'SQL'],
+                description: 'Developed a basic application for managing student records. Implemented functions for adding, updating, searching, and deleting records, and designed a database structure.',
                 features: [
-                    'Database operations: Add, Update, Search, and Delete student profiles.',
-                    'Input validation to prevent duplicate entries and bad data formats.',
-                    'Optimized SQL query schema for quick query lookup performance.',
-                    'Clean command-line or GUI user workflows for seamless administrative use.'
+                    'Add, update, search, and delete student records cleanly.',
+                    'Structured database schema design for simple record retrieval.',
+                    'Input checks for student profiles and entries.'
                 ],
-                codeSnippet: `def add_student(student_id, name, course):\n    try:\n        cursor.execute("INSERT INTO students VALUES (?, ?, ?)", (student_id, name, course))\n        db.commit()\n        print("Record created successfully!")\n    except Exception as e:\n        print(f"Error: {e}")`
+                codeSnippet: `def add_student(student_id, name, course):\n    cursor.execute("INSERT INTO students VALUES (?, ?, ?)", (student_id, name, course))\n    db.commit()`
             },
             'portfolio-web': {
                 title: 'Responsive Portfolio Website',
-                tech: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
-                description: 'A sleek, lightweight single-page application built to showcase software engineering experience, credentials, and open-source contributions.',
+                tech: ['HTML', 'CSS', 'JavaScript'],
+                description: 'Created a responsive personal portfolio website with dedicated sections for education, skills, projects, and professional experience.',
                 features: [
-                    'Fully responsive layout adaptable across mobile, tablet, and widescreen monitors.',
-                    'Dynamic theme toggling (Dark/Light Mode) with local persistence.',
-                    'Interactive project modal viewers and live filtering capabilities.',
-                    'Accessible HTML structure complying with semantic Web Standards.'
+                    'Fully responsive across desktop and mobile devices.',
+                    'Dark / Light theme toggle.',
+                    'Structured sections for resume overview and contact options.'
                 ],
-                codeSnippet: `const toggleTheme = () => {\n  document.documentElement.classList.toggle('light');\n  localStorage.setItem('theme', isLight ? 'light' : 'dark');\n};`
+                codeSnippet: `const themeToggle = () => {\n  document.documentElement.classList.toggle('light');\n};`
             }
         };
 
@@ -805,11 +727,11 @@
                     ${data.tech.map(t => `<span class="px-2.5 py-1 rounded-md text-xs font-mono bg-brand-500/10 text-brand-400 border border-brand-500/20">${t}</span>`).join('')}
                 </div>
                 <p class="text-slate-300 light:text-slate-600 text-sm mb-4">${data.description}</p>
-                <h4 class="font-bold text-white light:text-slate-900 text-sm mb-2">Key Highlights & Features:</h4>
+                <h4 class="font-bold text-white light:text-slate-900 text-sm mb-2">Key Features:</h4>
                 <ul class="list-disc list-inside text-slate-300 light:text-slate-600 text-sm space-y-1 mb-6">
                     ${data.features.map(f => `<li>${f}</li>`).join('')}
                 </ul>
-                <h4 class="font-bold text-white light:text-slate-900 text-sm mb-2">Code Excerpt:</h4>
+                <h4 class="font-bold text-white light:text-slate-900 text-sm mb-2">Code Snippet:</h4>
                 <pre class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-emerald-400 overflow-x-auto border border-slate-800"><code>${data.codeSnippet}</code></pre>
             `;
 
@@ -822,21 +744,16 @@
             document.getElementById('projectModal').classList.remove('flex');
         }
 
-        // Close Modal when clicking outside content area
         document.getElementById('projectModal').addEventListener('click', (e) => {
             if (e.target === document.getElementById('projectModal')) {
                 closeProjectModal();
             }
         });
 
-        // Handle Contact Form Submission
+        // Contact Form Submission Handler
         function handleFormSubmit(e) {
             e.preventDefault();
-            
-            // Show toast message
-            showToast('Thank you! Your message has been sent successfully.');
-            
-            // Reset form
+            showToast('Thank you! Your message has been sent to Antony.');
             document.getElementById('contactForm').reset();
         }
 
